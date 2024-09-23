@@ -1,0 +1,19 @@
+/* src/Customer/Components/Checkout/Payment.module.css */
+.container {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+button {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #007bb5;
+}
+ 

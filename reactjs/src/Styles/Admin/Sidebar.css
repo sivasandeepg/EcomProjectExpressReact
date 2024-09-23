@@ -1,0 +1,86 @@
+/* Sidebar container */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #333; /* Sidebar background color */
+  padding-top: 50px; /* Adjust according to your header height */
+}
+
+/* Sidebar list */
+.Sidebar-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar list item */
+.navbar-item {
+  padding: 10px 20px;
+  color: #fff; /* Main menu item text color */
+  cursor: pointer;
+}
+
+/* Sidebar link */
+.navbar-item a,
+.dropdown-toggle {
+  display: block;
+  color: inherit; /* Inherit text color from navbar-item */
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+/* Sidebar link hover */
+.navbar-item a:hover,
+.dropdown-toggle:hover {
+  background-color: #555; /* Hover background color */
+}
+
+/* Active main menu item when dropdown is open */
+.navbar-item.active {
+  background-color: #444; /* Active background color */
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  background-color: #444; /* Dropdown background color */
+}
+
+/* Dropdown menu show class */
+.dropdown-menu.show {
+  display: block;
+}
+
+/* Dropdown item */
+.dropdown-item {
+  padding: 5px 0;
+  color: #ccc; /* Dropdown item text color */
+}
+
+/* Dropdown link */
+.dropdown-item a {
+  color: inherit; /* Inherit text color from dropdown-item */
+  text-decoration: none;
+}
+
+/* Dropdown link hover */
+.dropdown-item a:hover {
+  text-decoration: underline;
+}
+
+/* Ensure Orders moves down when Products dropdown is open */
+.orders-item {
+  transition: margin-top 0.3s;
+}
+
+.orders-item.margin-top {
+  margin-top: 120px; /* Adjust this value based on the height of the dropdown items */
+}
+ 

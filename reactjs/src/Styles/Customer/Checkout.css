@@ -1,0 +1,45 @@
+/* src/Styles/Customer/Checkout.module.css */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 16px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .leftColumn {
+    flex: 1;
+    margin-right: 16px;
+  }
+  
+  .rightColumn {
+    flex: 2;
+  }
+  
+  .button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  
+  .button:hover {
+    background-color: #45a049;
+  }
+  
+  .savedAddress {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #ccc;
+  }
+   

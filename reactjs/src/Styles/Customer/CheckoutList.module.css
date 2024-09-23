@@ -1,0 +1,26 @@
+/* src/Customer/Components/Checkout/CheckoutList.module.css */
+.container {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.item {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 16px;
+}
+ 
