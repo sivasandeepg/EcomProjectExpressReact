@@ -1,17 +1,17 @@
 //rafce 
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import HomeProductCard from './HomeProductCard';
 import { Button } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
+// import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import './HomeProductSection.css'; 
  
 const HomeProductSection = ({ section, data }) => {
     console.log(data); 
     const [activeIndex, setActiveIndex] = useState(0);
    
-  
+                        
 
     const slidePrev = () => setActiveIndex(activeIndex - 1);
     const slideNext = () => setActiveIndex(activeIndex + 1);

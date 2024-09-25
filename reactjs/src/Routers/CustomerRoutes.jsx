@@ -12,6 +12,7 @@ import Checkout from '../Pages/Checkout';
 import Success from '../Pages/Success';
 import Cancel from '../Pages/Cancel';
 import Orders from '../Pages/Orders';
+import Login from '../Pages/Login';
 
 
  
@@ -19,12 +20,12 @@ import Orders from '../Pages/Orders';
 const CustomerRoutes = () => {
     const location = useLocation();
     const showNavigation = location.pathname !== "/notfound";
-
+     
     return (
         <div>
             {showNavigation && <Navbar />}
             <Routes>
-                <Route path="/login" element={<Homepage />} />
+                <Route path="/login" element={<Login />} />   
                 <Route path="/register" element={<Homepage />} />
                 <Route path="/" element={<Homepage />} />
                 <Route path="/home" element={<Homepage />} />

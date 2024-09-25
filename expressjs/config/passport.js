@@ -3,13 +3,13 @@ const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const mongoose = require('mongoose');
 require('../models/GoogleUser'); // Adjust the path as necessary
-
+ 
 const User = mongoose.model('GoogleUser');
-
+  
 passport.use(new GoogleStrategy({
-  clientID: process.env.GOOGLE_CLIENT_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: "http://localhost:5000/google/callback"
+  clientID: process.env.GOOGLE_LOGIN_CLIENT_ID,
+  clientSecret: process.env.GOOGLE_LOGIN_CLIENT_SECRECT,
+  callbackURL: "http://localhost:5000/auth/google/callback"
 },
 async (token, tokenSecret, profile, done) => {
   try {

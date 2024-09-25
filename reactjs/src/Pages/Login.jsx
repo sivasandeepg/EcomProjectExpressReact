@@ -1,10 +1,12 @@
 import React from 'react'
-import GoogleLogin from '../Customer/Components/Auth/GoogleLogin'
+// import GoogleLogin from '../Customer/Components/Auth/GoogleLogin'
+import LoginForm from '../Customer/Components/Auth/LoginForm'
 
 const Login = () => {
   return (
     <div>
-      <GoogleLogin/>
+      {/* <GoogleLogin/> */}
+      <LoginForm/> 
     </div>
   )
 }

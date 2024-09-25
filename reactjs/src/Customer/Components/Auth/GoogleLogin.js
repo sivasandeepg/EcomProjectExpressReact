@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+ 
 const GoogleLogin = () => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -18,7 +18,7 @@ const GoogleLogin = () => {
   }, []);
 
   const handleLogin = () => {
-    window.location.href = 'http://localhost:5000/google/glogin';
+    window.location.href = 'http://localhost:5000/auth/google/login';
   };
 
   const handleLogout = () => {
